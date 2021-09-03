@@ -35,6 +35,8 @@ a
     @include mb500
         margin-left: 20px
         margin-right: 20px
+.clear-fix
+    clear: both
 .wrap
     max-width: 1920px
     margin: 0 auto
@@ -59,10 +61,6 @@ a
             font-size: 30px
         @include pad 
             display: none
-    &:after
-        content: ''
-        display: table
-        clear: both
 .menu
     display: flex
     justify-content: space-between
@@ -83,14 +81,14 @@ a
         background: #000000
     a
         font-size: 30px
-        padding-left: 40px
+        margin-right: 40px
         @include hvr-line-left-to-right(#fff, 4px)
         @include pc1000
             font-size: 20px
-            padding-left: 25px
+            margin-right: 25px
         @include pad
             font-size: 20px
-            padding-left: 20px
+            margin-right: 20px
             @include hvr-line-left-to-right(transparent, 4px)
         @include mb500
             line-height: 40px
@@ -183,12 +181,18 @@ a
         @include pc1000
             font-size: 30px
             line-height: 50px
+        @include mb500
+            font-size: 20px
+            line-height: 30px
     p
         font-size: 25px
         line-height: 50px
         @include pc1000
             font-size: 20px
             line-height: 30px
+        @include mb500
+            font-size: 16px
+            line-height: 20px
 .fadeIn-bottom
     top: 80%
 .fadeIn-top
