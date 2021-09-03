@@ -1,0 +1,264 @@
+$main-color: #FF9921
+
+@import "_mixin.sass"
+@import "_grid.sass"
+@import "_reset.scss"
+@import "../scss/fontawesome.scss"
+@import "../scss/brands.scss"
+@import "../scss/regular.scss"
+@import "../scss/solid.scss"
+@import "../scss/v4-shims.scss"
+
+body
+    background: #222222
+    font-family: 'Lato'
+    color: #fff
+a
+    display: inline-block
+    text-decoration: none
+    color: #fff
+.l-p-row
+    padding-left: 100px
+    padding-right: 100px
+    @include pc1000
+        padding-left: 50px
+        padding-right: 50px
+    @include mb500 
+        padding-left: 20px
+        padding-right: 20px
+.l-m-row
+    margin-left: 100px
+    margin-right: 100px
+    @include pc1000
+        margin-left: 50px
+        margin-right: 50px
+    @include mb500
+        margin-left: 20px
+        margin-right: 20px
+.wrap
+    max-width: 1920px
+    margin: 0 auto
+    width: 100%
+.banner
+    background: url(../images/banner.png) no-repeat center
+    max-width: 1920px
+    width: 100%
+    height: 100vh
+    margin-bottom: 80px
+.header
+    display: flex
+    justify-content: space-between
+    align-items: center
+    height: 20%
+    background: #00000066
+    @include pad 
+        display: block
+    h3
+        font-size: 55px
+        @include pc1000
+            font-size: 30px
+        @include pad 
+            display: none
+    &:after
+        content: ''
+        display: table
+        clear: both
+.menu
+    display: flex
+    justify-content: space-between
+    align-items: flex-end
+    height: 100%
+    @include pad 
+        align-items: center
+    @include mb500
+        max-height: 0
+        overflow: hidden
+        transition: 0.8s
+        position: absolute
+        z-index: 200
+        top: 70px
+        left: 0
+        right: 0
+        display: block
+        background: #000000
+    a
+        font-size: 30px
+        padding-left: 40px
+        @include hvr-line-left-to-right(#fff, 4px)
+        @include pc1000
+            font-size: 20px
+            padding-left: 25px
+        @include pad
+            font-size: 20px
+            padding-left: 20px
+            @include hvr-line-left-to-right(transparent, 4px)
+        @include mb500
+            line-height: 40px
+            width: 100%
+            margin: 0
+            text-align: center
+            border-bottom: 1px solid #fff
+    a:hover
+        background-size: 100% 4px
+.showmenu
+    display: none
+    padding-top: 20px
+    float: right
+    @include mb500
+        display: block
+        color: #fff
+        font-size: 30px
+    i
+        text-align: right
+.menu-show
+    .menu
+        max-height: 246px
+.heading
+    display: flex
+    justify-content: center
+    flex-direction: column
+    align-items: center
+    background: #00000066
+    height: 80%
+    font-weight: bold
+    h1
+        font-size: 130px
+        @include pc1000
+            font-size: 90px
+        @include mb500 
+            font-size: 70px
+    h2
+        font-size: 70px
+        @include pc1000
+            font-size: 50px
+        @include mb500 
+            font-size: 30px
+.about
+    display: flex
+    flex-wrap: wrap
+    li
+        width: 50%
+        img
+            width: 100%
+.content 
+    position: relative
+    width: 90%
+    margin: auto
+    overflow: hidden
+
+.content:hover
+    opacity: 1
+.content-details
+    background: #b47500b3
+    position: absolute
+    height: 100%
+    width: 100%
+    bottom: 0
+    right: 0
+    position: absolute
+    text-align: center
+    padding-left: 1em
+    padding-right: 1em
+    top: 50%
+    left: 50%
+    opacity: 0
+    -webkit-transform: translate(-50%, -50%)
+    -moz-transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%)
+    -webkit-transition: all 0.3s ease-in-out 0s
+    -moz-transition: all 0.3s ease-in-out 0s
+    transition: all 0.3s ease-in-out 0s
+.content:hover .content-details
+    top: 50%
+    left: 50%
+    opacity: 1
+.content-details
+    display: flex
+    flex-direction: column
+    justify-content: center
+    h3
+        font-size: 50px
+        line-height: 70px
+        padding-bottom: 20px
+        @include pc1000
+            font-size: 30px
+            line-height: 50px
+    p
+        font-size: 25px
+        line-height: 50px
+        @include pc1000
+            font-size: 20px
+            line-height: 30px
+.fadeIn-bottom
+    top: 80%
+.fadeIn-top
+    top: 20%
+.fadeIn-left
+    left: 20%
+.fadeIn-right
+    left: 80%
+.latest, .access
+    h2
+        font-size: 50px
+        color: $main-color
+        padding-top: 200px
+        padding-bottom: 40px
+        @include pc1000
+            font-size: 30px
+            padding-top: 100px
+            padding-bottom: 20px
+.line
+    @include line(100px, 3px, $main-color, 120px)
+    @include pc1000
+        @include line(100px, 3px, $main-color, 60px)
+.latest-pic
+    display: flex
+    flex-wrap: wrap
+    li
+        width: 25%
+        @include mb500
+            width: 50%
+.footer
+    height: 25vh
+    display: flex
+    justify-content: space-between
+    align-items: center
+    @include pad 
+        display: block
+        text-align: center
+    h3
+        font-size: 50px
+        @include pc1000
+            font-size: 30px
+        @include pad
+            margin-top: 20px
+            margin-bottom: 20px
+        @include mb500
+            font-size: 20px
+    p
+        font-size: 30px
+        @include pc1000
+            font-size: 20px
+        @include pad
+            margin-bottom: 20px
+        @include mb500
+            font-size: 16px
+.media
+    display: flex
+    justify-content: center
+    a
+        margin-left: 50px
+        @include pc1000
+            font-size: 30px
+        @include pad
+            margin-left: 25px
+            margin-right: 25px
+            margin-bottom: 25px
+        i
+            font-size: 50px
+            @include pc1000
+                font-size: 30px
+            @include mb500
+                font-size: 20px
+
+// 參考資料:https://codepen.io/ArnaudBalland/pen/vGZKLr?editors=1100
