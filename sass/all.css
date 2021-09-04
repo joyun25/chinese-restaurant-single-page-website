@@ -9269,42 +9269,17 @@ a {
 
 .content {
   position: relative;
-  width: 90%;
-  margin: auto;
   overflow: hidden;
 }
 
-.content:hover {
-  opacity: 1;
-}
-
-.content-details {
+.content-text {
   background: #b47500b3;
-  position: absolute;
   height: 100%;
   width: 100%;
-  bottom: 0;
-  right: 0;
   position: absolute;
   text-align: center;
-  padding-left: 1em;
-  padding-right: 1em;
-  top: 50%;
-  left: 50%;
-  opacity: 0;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  -webkit-transition: all 0.3s ease-in-out 0s;
-  transition: all 0.3s ease-in-out 0s;
-}
-
-.content:hover .content-details {
-  top: 50%;
-  left: 50%;
-  opacity: 1;
-}
-
-.content-details {
+  -webkit-transition: all 1s;
+  transition: all 1s;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -9317,59 +9292,64 @@ a {
           justify-content: center;
 }
 
-.content-details h3 {
+.content-text h3 {
   font-size: 50px;
   line-height: 70px;
   padding-bottom: 20px;
 }
 
 @media (max-width: 1000px) {
-  .content-details h3 {
+  .content-text h3 {
     font-size: 30px;
     line-height: 50px;
   }
 }
 
 @media (max-width: 500px) {
-  .content-details h3 {
+  .content-text h3 {
     font-size: 20px;
     line-height: 30px;
   }
 }
 
-.content-details p {
+.content-text p {
   font-size: 25px;
   line-height: 50px;
 }
 
 @media (max-width: 1000px) {
-  .content-details p {
+  .content-text p {
     font-size: 20px;
     line-height: 30px;
   }
 }
 
 @media (max-width: 500px) {
-  .content-details p {
+  .content-text p {
     font-size: 16px;
     line-height: 20px;
   }
 }
 
-.fadeIn-bottom {
-  top: 80%;
+.left {
+  left: 100%;
 }
 
-.fadeIn-top {
-  top: 20%;
+.right {
+  left: -100%;
 }
 
-.fadeIn-left {
-  left: 20%;
+.top {
+  top: 100%;
 }
 
-.fadeIn-right {
-  left: 80%;
+.bottom {
+  top: -100%;
+}
+
+.content:hover .content-text {
+  left: 0;
+  top: 0;
 }
 
 .latest h2, .access h2 {
