@@ -9,7 +9,7 @@
 - RWD
 - 用jQuery做手機板的漢堡選單
 #### 第三方插件：
-- font-awesome
+- [font-awesome](https://fontawesome.com/)
 #### 內容使用申明：
 - 字型使用：[google font](https://fonts.google.com/)
 - 圖庫來源：[unsplash](https://unsplash.com/)、[pexels](https://www.pexels.com/zh-tw/)
