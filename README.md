@@ -1,6 +1,6 @@
 # 網頁設計切版讀書會
 版型皆出自 [zz41354899](https://github.com/zz41354899)，僅作切版練習
-### 好功夫中華料理：[Github Pages](https://joyun25.github.io/kung-fu-restaurant/)
+### 好功夫中華料理：[Github Pages](https://joyun25.github.io/chinese-restaurant-single-page-website/)
 ![](https://i.imgur.com/RYDMvak.jpg)
 #### 功能：
 - 簡易的一頁式網頁
